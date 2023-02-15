@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1() {
@@ -58,6 +59,18 @@ public class Main {
         int productionInThreeDays = productionInOneDay * 3;
         System.out.println("За 3 дня машина произвела " + productionInThreeDays + " штук бутылок");
         int productionInOneMonth = productionInOneDay * 30;
-        System.out.println("За месяц (30 дней) машина произвела " + productionInOneMonth + " штук бутылок");
+        System.out.println("За 1 месяц (30 дней) машина произвела " + productionInOneMonth + " штук бутылок");
+    }
+    public static void task5() {
+
+        System.out.println("Задача 5");
+        int cansTotalNumber = 120;
+        int whiteCansPerRoom = 2;
+        int brownCansPerRoom = 4;
+        int totalNumberOfRooms = cansTotalNumber / (whiteCansPerRoom + brownCansPerRoom);
+        int whiteCansTotal = totalNumberOfRooms * whiteCansPerRoom;
+        int brownCansTotal = totalNumberOfRooms * brownCansPerRoom;
+
+        System.out.println("В школе, где " + totalNumberOfRooms + " классов, нужно " + whiteCansTotal + " банок белой краски и " + brownCansTotal + " банок коричневой краски");
     }
 }

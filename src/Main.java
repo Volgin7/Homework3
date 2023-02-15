@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         task1();
+        task2();
     }
 
     public static void task1() {
@@ -20,5 +21,16 @@ public class Main {
         double varDouble = 123.4567899999999;
         System.out.println("Значение переменной varDouble с типом double равно " + varDouble);
 
+    }
+    public static void task2() {
+
+        System.out.println("Задача 2");
+        float varFloat = 27.12f;
+        long varLong = 987_678_965_549L;
+        double varDouble = 2.786;
+        short varShort = 569;
+        int varInt = -159;
+        char varChar = 27897;
+        byte varByte = 67;
     }
 }

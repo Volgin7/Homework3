@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1() {
@@ -72,5 +73,25 @@ public class Main {
         int brownCansTotal = totalNumberOfRooms * brownCansPerRoom;
 
         System.out.println("В школе, где " + totalNumberOfRooms + " классов, нужно " + whiteCansTotal + " банок белой краски и " + brownCansTotal + " банок коричневой краски");
+    }
+    public static void task6() {
+
+        System.out.println("Задача 6");
+        int bananasNumber = 5;
+        float bananaWeight = 80f;
+        int milkAmount = 200;
+        float milkWeight = 105f/100;
+        int iceСreamNumberOfBlocks = 2;
+        float iceСreamWeightOfBlock = 100f;
+        int eggsNumber = 2;
+        float eggWeight = 70f;
+
+        float breafastWeightGramms = bananasNumber * bananaWeight + milkAmount * milkWeight + iceСreamNumberOfBlocks * iceСreamWeightOfBlock + eggsNumber * eggWeight;
+        System.out.println("Вес спортивного завтрака " + breafastWeightGramms + " грамм");
+
+        float breafastWeightKilos = breafastWeightGramms / 1000;
+        System.out.println("Вес спортивного завтрака " + breafastWeightKilos + " килограмм");
+
+        // System.out.println("Значение переменной varDouble с типом double равно " + varDouble);
     }
 }

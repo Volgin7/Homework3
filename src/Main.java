@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1() {
@@ -107,5 +108,27 @@ public class Main {
        float averageWeightLooseRate = (maxWeightLooseRate + minWeightLooseRate)/2;
        float averageDays = weightToLoose / averageWeightLooseRate;
        System.out.println("Нужно в среднем " + averageDays + " дней");
+    }
+    public static void task8() {
+
+        System.out.println("Задача 8");
+
+        float salaryIncreaseRate = 1.1f;
+
+        float mashasPresentSalary = 67_760f;
+        float mashasNewSalary = mashasPresentSalary * salaryIncreaseRate;
+        float mashasSalaryAnnualIncrease = (mashasNewSalary - mashasPresentSalary) * 12;
+        System.out.println("Маша теперь получает " + mashasNewSalary + " рублей. Годовой доход вырос на " + mashasSalaryAnnualIncrease + " рублей");
+
+        float denisPresentSalary = 83_690f;
+        float denisNewSalary = denisPresentSalary * salaryIncreaseRate;
+        float denisSalaryAnnualIncrease = (denisNewSalary - denisPresentSalary) * 12;
+        System.out.println("Денис теперь получает " + denisNewSalary + " рублей. Годовой доход вырос на " + denisSalaryAnnualIncrease + " рублей");
+
+        float christinasPresentSalary = 76_230f;
+        float christinasNewSalary = christinasPresentSalary * salaryIncreaseRate;
+        float christinasSalaryAnnualIncrease = (christinasNewSalary - christinasPresentSalary) * 12;
+        System.out.println("Кристина теперь получает " + christinasNewSalary + " рублей. Годовой доход вырос на " + christinasSalaryAnnualIncrease + " рублей");
+
     }
 }

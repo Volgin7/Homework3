@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -32,5 +33,16 @@ public class Main {
         int varInt = -159;
         char varChar = 27897;
         byte varByte = 67;
+    }
+    public static void task3() {
+
+        System.out.println("Задача 3");
+        int pupilsInClassOne = 23;
+        int pupilsInClassTwo = 27;
+        int pupilsInClassThree = 30;
+        int totalNumberOfPupils = pupilsInClassOne + pupilsInClassTwo + pupilsInClassThree;
+        int totalNumberOfSheets = 480;
+        int numberOfSheetPerPupil = totalNumberOfSheets / totalNumberOfPupils;
+        System.out.println("На каждого ученика рассчитано " + numberOfSheetPerPupil + " листов бумаги ");
     }
 }

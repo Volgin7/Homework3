@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1() {
@@ -44,5 +45,19 @@ public class Main {
         int totalNumberOfSheets = 480;
         int numberOfSheetPerPupil = totalNumberOfSheets / totalNumberOfPupils;
         System.out.println("На каждого ученика рассчитано " + numberOfSheetPerPupil + " листов бумаги ");
+    }
+    public static void task4() {
+
+        System.out.println("Задача 4");
+        int productivityPerTwoMinuties = 16;
+        int productivityPerMinute = productivityPerTwoMinuties / 2;
+        int productionInTwentyMinuties = productivityPerMinute * 20;
+        System.out.println("За 20 минут машина произвела " + productionInTwentyMinuties + " штук бутылок");
+        int productionInOneDay = productivityPerMinute * 60 * 24;
+        System.out.println("За сутки машина произвела " + productionInOneDay + " штук бутылок");
+        int productionInThreeDays = productionInOneDay * 3;
+        System.out.println("За 3 дня машина произвела " + productionInThreeDays + " штук бутылок");
+        int productionInOneMonth = productionInOneDay * 30;
+        System.out.println("За месяц (30 дней) машина произвела " + productionInOneMonth + " штук бутылок");
     }
 }

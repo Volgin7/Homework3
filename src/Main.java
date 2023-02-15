@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -91,7 +92,20 @@ public class Main {
 
         float breafastWeightKilos = breafastWeightGramms / 1000;
         System.out.println("Вес спортивного завтрака " + breafastWeightKilos + " килограмм");
+    }
+    public static void task7() {
 
-        // System.out.println("Значение переменной varDouble с типом double равно " + varDouble);
+        System.out.println("Задача 7");
+        float weightToLoose = 7f*1000f;
+        float minWeightLooseRate = 250f;
+        float maxWeightLooseRate = 500f;
+
+       float maxDays = weightToLoose / minWeightLooseRate;
+       System.out.println("Нужно " + maxDays + " дней если спортсмен будет терять " + minWeightLooseRate + " грамм в день");
+       float minDays = weightToLoose / maxWeightLooseRate;
+       System.out.println("Нужно " + minDays + " дней если спортсмен будет терять " + maxWeightLooseRate + " грамм в день");
+       float averageWeightLooseRate = (maxWeightLooseRate + minWeightLooseRate)/2;
+       float averageDays = weightToLoose / averageWeightLooseRate;
+       System.out.println("Нужно в среднем " + averageDays + " дней");
     }
 }
